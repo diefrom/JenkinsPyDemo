@@ -1,2 +1,7 @@
+import sys
+
 if __name__ == '__main__':
-    print("hello jenkins")
+    if len(sys.argv) > 2:
+        print("This is {}".format(sys.argv[1]))
+    else:
+        print("hello jenkins")
